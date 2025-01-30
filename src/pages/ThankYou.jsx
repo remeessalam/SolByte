@@ -16,7 +16,7 @@ const ThankYou = () => {
   return (
     <>
       <div className="h-[calc(100vh-10rem)] flex flex-col items-center justify-center bg-secondary/5">
-        <div className="py-4 sticky top-0 w-full bg-secondary/60 backdrop-blur-md z-50 text-primary_text">
+        <div className="py-4 sticky top-0 w-full bg-white/60 backdrop-blur-md z-50 text-primary_text">
           <div className="wrapper flex justify-between items-center gap-10">
             <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
               <Link smooth={true} to="/" className="cursor-pointer">
@@ -25,7 +25,7 @@ const ThankYou = () => {
                   src={logoImg}
                   width={150}
                   height={150}
-                  className="h-[3rem] md:h-[3.75rem] scale-125"
+                  className="w-[8rem] md:w-[11rem] scale-125 object-contain"
                   alt="logo"
                 />
               </Link>
@@ -54,7 +54,7 @@ const ThankYou = () => {
               height={150}
               loading="lazy"
               src={logoImg}
-              className="w-[10rem]"
+              className="w-[12rem]"
               alt="logo"
             />
             <p className="desc text-sm max-w-[22rem] mt-3">

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { SpinnerContext } from "./SpinnerContext";
 import { companyDetails } from "../constant";
 import { useForm } from "react-hook-form";
@@ -21,11 +21,35 @@ const LeadForm = () => {
       phone: "",
       subject: "",
       message: "",
+      captcha: "",
     },
   });
 
+  // CAPTCHA logic
+  const [captcha, setCaptcha] = useState({
+    num1: Math.floor(Math.random() * 10),
+    num2: Math.floor(Math.random() * 10),
+  });
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
+
+  const validateCaptcha = (value) => {
+    const sum = captcha.num1 + captcha.num2;
+    if (parseInt(value) === sum) {
+      setIsCaptchaValid(true);
+      return true;
+    } else {
+      setIsCaptchaValid(false);
+      return "CAPTCHA is incorrect";
+    }
+  };
+
   // handle form submit click
   const handleFormSubmit = async (values) => {
+    if (!isCaptchaValid) {
+      toast.error("Please solve the CAPTCHA correctly.");
+      return;
+    }
+
     setSpinner(true);
 
     var emailBody = "Name: " + values.name + "\n\n";
@@ -60,8 +84,15 @@ const LeadForm = () => {
       .catch((error) => {
         toast.error(error.message);
       })
-      .finally(() => setSpinner(false));
+      .finally(
+        () => setSpinner(false),
+        setCaptcha({
+          num1: Math.floor(Math.random() * 10),
+          num2: Math.floor(Math.random() * 10),
+        })
+      );
   };
+
   return (
     <div className="flex flex-col gap-4 py-[5rem] px-5 bg-primary/5">
       <h2
@@ -175,10 +206,29 @@ const LeadForm = () => {
           />
           <small className="error-message">{errors.message?.message}</small>
         </div>
+        {/* CAPTCHA Section */}
+        <div className="flex flex-col gap-1">
+          <label className="text-sm ml-2">
+            What is {captcha.num1} + {captcha.num2}?
+          </label>
+          <input
+            type="text"
+            className="outline-none p-2 rounded-full bg-white/60 text-black border"
+            placeholder="Enter the sum"
+            {...register("captcha", {
+              required: "CAPTCHA is required",
+              validate: validateCaptcha,
+            })}
+          />
+          <small className="error-message">{errors.captcha?.message}</small>
+        </div>
         <button
           disabled={isSubmitting}
           type="submit"
-          className="secondary-btn mt-3 w-full"
+          className={`${
+            isSubmitting ||
+            (!isCaptchaValid && `!bg-primary/60 !cursor-not-allowed`)
+          } secondary-btn mt-3 w-full`}
         >
           Submit
         </button>

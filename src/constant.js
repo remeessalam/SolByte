@@ -30,11 +30,11 @@ import { ReactComponent as webServiceIcon4 } from "./assets/svgs/services/UIUX D
 export { logoImg };
 
 export const companyDetails = {
-  phone: "+0000000000",
+  phone: "+916364890216",
   address: "ABC Street, City, Country",
-  email: "abc@xyz.com",
+  email: "support@solbytetech.com",
   linkedin: "",
-  instagram: "",
+  instagram: "https://www.instagram.com/solbytetech?igsh=NTcyZXMyNWl2MGNu",
   twitter: "",
 };
 

@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import SubHeading from "../SubHeading";
-// import bgImg from "../../assets/images/landingpage/landing-contactus.webp";
 import { SpinnerContext } from "../SpinnerContext";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
@@ -23,11 +22,35 @@ const ContactForm = () => {
       phone: "",
       subject: "",
       message: "",
+      captcha: "", // Add CAPTCHA field
     },
   });
 
+  // CAPTCHA logic
+  const [captcha, setCaptcha] = useState({
+    num1: Math.floor(Math.random() * 10),
+    num2: Math.floor(Math.random() * 10),
+  });
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
+
+  const validateCaptcha = (value) => {
+    const sum = captcha.num1 + captcha.num2;
+    if (parseInt(value) === sum) {
+      setIsCaptchaValid(true);
+      return true;
+    } else {
+      setIsCaptchaValid(false);
+      return "CAPTCHA is incorrect";
+    }
+  };
+
   // handle form submit click
   const handleFormSubmit = async (values) => {
+    if (!isCaptchaValid) {
+      toast.error("Please solve the CAPTCHA correctly.");
+      return;
+    }
+
     setSpinner(true);
 
     var emailBody = "Name: " + values.name + "\n\n";
@@ -62,13 +85,19 @@ const ContactForm = () => {
       .catch((error) => {
         toast.error(error.message);
       })
-      .finally(() => setSpinner(false));
+      .finally(
+        () => setSpinner(false),
+        setCaptcha({
+          num1: Math.floor(Math.random() * 10),
+          num2: Math.floor(Math.random() * 10),
+        })
+      );
   };
+
   return (
     <div
       id="contact"
       className="py-[5rem] bg-secondary/5 bg-[100%_40%] relative min-h-[40rem] flex items-center"
-      // style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="absolute top-0 w-full h-full bg-background/70"></div>
       <div className="wrapper relative z-10 w-full">
@@ -175,10 +204,29 @@ const ContactForm = () => {
             />
             <small className="error-message">{errors.message?.message}</small>
           </div>
+          {/* CAPTCHA Section */}
+          <div className="flex flex-col gap-1">
+            <label className="text-sm ml-2">
+              What is {captcha.num1} + {captcha.num2}?
+            </label>
+            <input
+              type="text"
+              placeholder="Enter the sum"
+              className="outline-none border-secondary border bg-background/80 p-2 rounded-sm shadow-large shadow-secondary/5"
+              {...register("captcha", {
+                required: "CAPTCHA is required",
+                validate: validateCaptcha,
+              })}
+            />
+            <small className="error-message">{errors.captcha?.message}</small>
+          </div>
           <button
             disabled={isSubmitting}
-            type="button"
-            className="secondary-btn mt-2"
+            type="submit"
+            className={`${
+              isSubmitting ||
+              (!isCaptchaValid && `!bg-primary/60 !cursor-not-allowed`)
+            } secondary-btn mt-2`}
           >
             Send Message
           </button>
