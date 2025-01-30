@@ -356,6 +356,51 @@ export const webPortfolio = [
     img: require("./assets/images/web_projects/6.webp"),
     title: "V Talkz",
   },
+  {
+    id: 7,
+    img: require("./assets/images/web_projects/5ghomes.png"),
+    title: "5G Homes",
+  },
+  {
+    id: 8,
+    img: require("./assets/images/web_projects/bayut.png"),
+    title: "Bayut",
+  },
+  {
+    id: 9,
+    img: require("./assets/images/web_projects/cold creekcap.png"),
+    title: "Cold Creek Cap",
+  },
+  {
+    id: 10,
+    img: require("./assets/images/web_projects/emergency music .png"),
+    title: "Emergency Music Distribution",
+  },
+  {
+    id: 11,
+    img: require("./assets/images/web_projects/flatiorn.png"),
+    title: "Flatiorn",
+  },
+  {
+    id: 12,
+    img: require("./assets/images/web_projects/maven.png"),
+    title: "Maven",
+  },
+  {
+    id: 13,
+    img: require("./assets/images/web_projects/menissa caterings.png"),
+    title: "Menissa's Catering",
+  },
+  {
+    id: 14,
+    img: require("./assets/images/web_projects/methodist.png"),
+    title: "Methodist Health",
+  },
+  {
+    id: 15,
+    img: require("./assets/images/web_projects/think reality.png"),
+    title: "Think Realty",
+  },
 ];
 
 // portfolio images (app development)
@@ -379,5 +424,45 @@ export const appPortfolio = [
     id: 4,
     img: require("./assets/images/app_projects/4.webp"),
     title: "House of Deliverance",
+  },
+  {
+    id: 5,
+    img: require("./assets/images/app_projects/dubai travel guide.png"),
+    title: "Dubai Travel Guide",
+  },
+  {
+    id: 6,
+    img: require("./assets/images/app_projects/elora hair palour.png"),
+    title: "Elora Hair Palour",
+  },
+  {
+    id: 7,
+    img: require("./assets/images/app_projects/evans francis.png"),
+    title: "Evans Francis",
+  },
+  {
+    id: 8,
+    img: require("./assets/images/app_projects/house of deliverence.png"),
+    title: "House Of Deliverence",
+  },
+  {
+    id: 9,
+    img: require("./assets/images/app_projects/mybitsshop.png"),
+    title: "My Bits Shop",
+  },
+  {
+    id: 10,
+    img: require("./assets/images/app_projects/namaz.png"),
+    title: "Namaz",
+  },
+  {
+    id: 11,
+    img: require("./assets/images/app_projects/potea.png"),
+    title: "Potea",
+  },
+  {
+    id: 12,
+    img: require("./assets/images/app_projects/rentop bike and car.png"),
+    title: "Rentop Bike And Car",
   },
 ];
