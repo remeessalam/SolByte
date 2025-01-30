@@ -13,6 +13,7 @@ import { ReactComponent as allServiceIcon3 } from "./assets/svgs/services/UIUX D
 import { ReactComponent as allServiceIcon4 } from "./assets/svgs/services/Chatbots.svg";
 import { ReactComponent as allServiceIcon5 } from "./assets/svgs/services/Machine Learning Solutions.svg";
 import { ReactComponent as allServiceIcon6 } from "./assets/svgs/services/Game Development.svg";
+import { ReactComponent as allServiceIcon7 } from "./assets/svgs/services/digital marketing.svg";
 
 // app development services
 import { ReactComponent as appServiceIcon1 } from "./assets/svgs/services/iOS App Development.svg";
@@ -178,7 +179,7 @@ export const allServices = [
   {
     id: 1,
     title: "Web Development",
-    link:"/web-development",
+    link: "/web-development",
     description:
       "Design and develop responsive, SEO-friendly websites that effectively represent your brand and engage your audience.",
     icon: allServiceIcon1,
@@ -199,7 +200,7 @@ export const allServices = [
   {
     id: 2,
     title: "App Development",
-    link:"/app-development",
+    link: "/app-development",
     description:
       "Develop robust, user-friendly mobile apps for iOS and Android platforms that meet your business needs.",
     icon: allServiceIcon2,
@@ -287,6 +288,27 @@ export const allServices = [
     icon: allServiceIcon6,
     detailHeading:
       "Game Development: Bringing Your Ideas to Life with Interactive Experiences",
+    detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At AI Company, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
+      <br/>
+      <ol>
+        <li><b>Concept and Story Development:</b><br/>We work with you to develop compelling narratives, unique characters, and engaging gameplay mechanics that keep players coming back.</li>
+        <br/>
+        <li><b>Multi-Platform Development:</b> <br/> Whether it’s Unity or Unreal Engine, we use the latest tools and technologies to ensure your game runs smoothly on all platforms, including iOS, Android, PC, and consoles.</li>
+        <br/>
+        <li><b>2D/3D Design and Animation:</b><br/> Our artists and animators create stunning graphics and immersive environments that enhance the gameplay experience.</li>
+      </ol>
+      <br/>
+      <br/>
+      <p>From mobile games to AAA titles, we are committed to delivering high-quality games that resonate with players and stand out in the market.</p>`,
+  },
+  {
+    id: 7,
+    title: "Digital marketing",
+    description:
+      "Grow your business online with our expert digital marketing strategies. From social media to paid ads, we help you reach the right audience and boost sales effortlessly!",
+    icon: allServiceIcon7,
+    detailHeading:
+      "Digital marketing: Bringing Your Ideas to Life with Interactive Experiences",
     detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At AI Company, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
       <br/>
       <ol>

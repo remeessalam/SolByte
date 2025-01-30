@@ -3,9 +3,9 @@ import { useInView } from "react-intersection-observer";
 
 const TrustWorthySection = React.memo(() => {
   const totalYrs = 2;
-  const projectsDone = 110;
-  const totalExperts = 15;
-  const happlyClients = 100;
+  const projectsDone = 124;
+  const totalExperts = 10;
+  const happlyClients = 80;
 
   const [yrs, setYrs] = useState(0);
   const [completedProjects, setCompletedProjects] = useState(0);
@@ -66,7 +66,7 @@ const TrustWorthySection = React.memo(() => {
           className="w-full flex flex-col items-center justify-center"
         >
           <h1 className="heading-1 text-secondary">{experts}+</h1>
-          <p className="font-medium mt-1 text-xl">Expert Team</p>
+          <p className="font-medium mt-1 text-xl">Industry Experts</p>
         </div>
         <div
           data-aos="fade-up"

@@ -2,7 +2,7 @@ import React from "react";
 import WebsiteHeader from "../components/website/WebsiteHeader";
 import PageBanner from "../components/website/PageBanner";
 import SubHeading from "../components/SubHeading";
-import aboutImg1 from "../assets/images/aboutus-img1.webp";
+import aboutImg1 from "../assets/images/aboutus-img1.jpg";
 import aboutImg2 from "../assets/images/aboutus-img2.webp";
 import aboutImg3 from "../assets/images/home-about-img.jpeg";
 // import teamImg1 from "../assets/images/team1.jpeg";
@@ -68,9 +68,7 @@ const AboutUs = () => {
               </h2>
               <p className="desc">
                 At{" "}
-                <span className="font-semibold text-primary">
-                  AI Company
-                </span>
+                <span className="font-semibold text-primary">AI Company</span>
                 , we're dedicated to driving your business forward with
                 innovative software solutions. With a passion for technology and
                 a commitment to excellence, we specialize in delivering tailored

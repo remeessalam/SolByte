@@ -36,7 +36,7 @@ const Home = () => {
     <>
       <WebsiteHeader />
       <section className="h-screen banner relative text-primary_text">
-        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background via-background/10 to-background">
+        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background/30 via-background/70 to-background">
           <div
             data-aos="fade-up"
             className="wrapper text-center flex flex-col gap-4 justify-center items-center h-full relative z-10"
@@ -48,11 +48,13 @@ const Home = () => {
               </span>
             </p>
             <h1 className="heading capitalize">
-              Pioneering AI-Infused <br /> Tech Solutions
+              Empowering Your
+              <br />
+              Digital Journey
             </h1>
             <p className="sub-heading max-w-6xl">
-              Begin your AI-powered transformation journey with AI Company.
-              Our innovative IT services ensure you stay ahead in a competitive
+              Begin your AI-powered transformation journey with AI Company. Our
+              innovative IT services ensure you stay ahead in a competitive
               market.
             </p>
           </div>
@@ -171,23 +173,27 @@ const Home = () => {
                   />
                 </div>
                 <h2 className="heading-2 max-w-[60rem]">
-                  Transforming Visions into Reality
+                  We Specialize in Deploying your Effective Ideas.
                 </h2>
                 <p className="desc">
                   At{" "}
-                  <span className="font-medium text-primary">
-                    AI Company
-                  </span>
-                  , we're dedicated to driving your business forward with
-                  innovative software solutions. With a passion for technology
-                  and a commitment to excellence, we specialize in delivering
-                  tailored software products and services to meet your unique
-                  needs. <br /> <br /> Our Mission is to revolutionize
-                  industries through technology, empowering businesses to thrive
-                  in a in an advanced AI Tech world. <br /> <br /> We believe in
-                  the power of creativity. We help to create a strong online
-                  presence that showcases your work and tells your story.
+                  <span className="font-medium text-primary">SolByte Tech</span>
+                  , our mission is leveraging technology to tackle challenges
+                  with creativity. Backed by a team of experts, we craft bespoke
+                  solutions to propel your business, prioritizing excellence and
+                  client satisfaction in every endeavor, distinguishing us in
+                  the digital realm.
                 </p>
+              </div>
+              <div className="w-full grid md:grid-cols-2 gap-3">
+                <div className="rounded-xl px-5 py-10 text-center bg-primary text-white">
+                  <h1 className="text-secondary text-5xl font-bold">2+</h1>
+                  <p className="text-lg">Years Of Experience</p>
+                </div>
+                <div className="rounded-xl px-5 py-10 text-center bg-primary text-white">
+                  <h1 className="text-secondary text-5xl font-bold">124+</h1>
+                  <p className="text-lg">Projects Completed</p>
+                </div>
               </div>
               <div className="w-fit mt-4 justify-start">
                 <Link to="/about-us" className="primary-btn">
