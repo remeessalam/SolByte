@@ -68,7 +68,7 @@ const AboutUs = () => {
               </h2>
               <p className="desc">
                 At{" "}
-                <span className="font-semibold text-primary">AI Company</span>
+                <span className="font-semibold text-primary">SolByte Tech</span>
                 , we're dedicated to driving your business forward with
                 innovative software solutions. With a passion for technology and
                 a commitment to excellence, we specialize in delivering tailored
@@ -161,7 +161,7 @@ const AboutUs = () => {
               <SubHeading heading="Our Expert Team" />
               <h2 className="heading-2">Meet Our Team</h2>
               <p className="desc">
-                At <b>AI Company</b>, our team is at the heart of every
+                At <b>SolByte Tech</b>, our team is at the heart of every
                 solution we provide. Combining expertise, innovation, and a deep
                 commitment to client success, our professionals are dedicated to
                 transforming complex challenges into seamless experiences. From

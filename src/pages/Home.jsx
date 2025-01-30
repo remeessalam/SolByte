@@ -44,7 +44,7 @@ const Home = () => {
             <p className="sub-heading">
               Welcome to{" "}
               <span className="text-primary font-semibold block sm:inline">
-                AI Company
+                SolByte Tech
               </span>
             </p>
             <h1 className="heading capitalize">
@@ -53,8 +53,8 @@ const Home = () => {
               Digital Journey
             </h1>
             <p className="sub-heading max-w-6xl">
-              Begin your AI-powered transformation journey with AI Company. Our
-              innovative IT services ensure you stay ahead in a competitive
+              Begin your AI-powered transformation journey with SolByte Tech.
+              Our innovative IT services ensure you stay ahead in a competitive
               market.
             </p>
           </div>

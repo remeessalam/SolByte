@@ -142,35 +142,35 @@ export const testimonials = [
     name: "Samiksha Sharma",
     position: "Operations Manager at EcoFlow Systems",
     img: require("./assets/images/testimonial3.png"),
-    desc: "“AI Company's web development service is top-notch. They built a responsive, user-friendly website that reflects our brand perfectly. Great job!”",
+    desc: "“SolByte Tech's web development service is top-notch. They built a responsive, user-friendly website that reflects our brand perfectly. Great job!”",
   },
   {
     id: 2,
     name: "Anubhav J.",
     position: "Marketing Director at PlayForge Studios",
     img: require("./assets/images/testimonial1.png"),
-    desc: "“AI Company's AI solutions are cutting-edge, driving our business forward. Their app development team exceeded expectations. Highly recommended!”",
+    desc: "“SolByte Tech's AI solutions are cutting-edge, driving our business forward. Their app development team exceeded expectations. Highly recommended!”",
   },
   {
     id: 3,
     name: "Emily T",
     position: "Operations Manager at Health Innovations Group",
     img: require("./assets/images/testimonial2.png"),
-    desc: "“The AI solutions from AI Company have revolutionized our operations. Their expertise and support are invaluable. A truly strategic partner.”",
+    desc: "“The AI solutions from SolByte Tech have revolutionized our operations. Their expertise and support are invaluable. A truly strategic partner.”",
   },
   {
     id: 4,
     name: "Aarav Kapoor",
     position: "Product Manager of Nexus Tech",
     img: require("./assets/images/testimonial4.jpg"),
-    desc: "“AI Company's app development team delivered a seamless, feature-rich application on time and within budget. Fantastic experience overall”",
+    desc: "“SolByte Tech's app development team delivered a seamless, feature-rich application on time and within budget. Fantastic experience overall”",
   },
   {
     id: 5,
     name: "Jessica M",
     position: "COO of Creative Solutions",
     img: require("./assets/images/testimonial5.jpg"),
-    desc: "“Impressed with AI Company's creativity in app development. They turned our vision into reality flawlessly. Exceptional service!”",
+    desc: "“Impressed with SolByte Tech's creativity in app development. They turned our vision into reality flawlessly. Exceptional service!”",
   },
 ];
 
@@ -184,7 +184,7 @@ export const allServices = [
       "Design and develop responsive, SEO-friendly websites that effectively represent your brand and engage your audience.",
     icon: allServiceIcon1,
     detailHeading: "Web Development: Tailored Websites that Deliver Results",
-    detailContent: `<p>At AI Company, we build more than just websites—we create digital experiences that are crafted to perform. Whether you're a small business looking to establish an online presence or a larger company needing a full-featured, scalable platform, our web development services are designed to meet your specific needs. Our team of developers, designers, and strategists work together to:</p>
+    detailContent: `<p>At SolByte Tech, we build more than just websites—we create digital experiences that are crafted to perform. Whether you're a small business looking to establish an online presence or a larger company needing a full-featured, scalable platform, our web development services are designed to meet your specific needs. Our team of developers, designers, and strategists work together to:</p>
     <br/>
     <ol>
       <li><b>Develop Custom Websites:</b><br/> No cookie-cutter solutions here. We build each site from the ground up, ensuring it aligns with your brand and business goals.</li>
@@ -206,7 +206,7 @@ export const allServices = [
     icon: allServiceIcon2,
     detailHeading:
       "App Development: Powerful Mobile Solutions for Modern Businesses",
-    detailContent: `<p>In a mobile-first world, having a well-designed app can set your business apart. At AI Company, we specialize in creating custom mobile applications that are user-friendly, feature-rich, and tailored to your specific goals. Our app development services cover everything from concept to deployment:</p>
+    detailContent: `<p>In a mobile-first world, having a well-designed app can set your business apart. At SolByte Tech, we specialize in creating custom mobile applications that are user-friendly, feature-rich, and tailored to your specific goals. Our app development services cover everything from concept to deployment:</p>
       <br/>
       <ol>
         <li><b>iOS and Android Apps:</b><br/>Whether you’re targeting iPhone users or Android fans, we develop native apps for both platforms to ensure optimal performance and user experience.</li>
@@ -246,7 +246,7 @@ export const allServices = [
       "Craft intuitive chatbot solutions to enhance customer engagement and streamline business operations with automated interactions.",
     icon: allServiceIcon4,
     detailHeading: "Chatbots: Automate and Enhance Customer Interaction",
-    detailContent: `<p>Chatbots are revolutionizing the way businesses interact with their customers, offering instant support and engagement at any time of day. At AI Company, we develop intelligent, AI-driven chatbots that help streamline customer service, boost conversions, and reduce operational costs. Our chatbot services include:</p>
+    detailContent: `<p>Chatbots are revolutionizing the way businesses interact with their customers, offering instant support and engagement at any time of day. At SolByte Tech, we develop intelligent, AI-driven chatbots that help streamline customer service, boost conversions, and reduce operational costs. Our chatbot services include:</p>
       <br/>
       <ol>
         <li><b>Natural Language Processing (NLP):</b><br/>We use advanced AI and NLP to build chatbots that understand and respond to user queries in a conversational, human-like way.</li>
@@ -267,7 +267,7 @@ export const allServices = [
     icon: allServiceIcon5,
     detailHeading:
       "AI Development Solutions: Empowering Innovation with Artificial Intelligence",
-    detailContent: `<p>In the age of artificial intelligence (AI), leveraging AI technologies can revolutionize your business operations. At AI Company, we specialize in developing AI solutions that help businesses innovate, automate, and make intelligent decisions. Our AI services include:</p>
+    detailContent: `<p>In the age of artificial intelligence (AI), leveraging AI technologies can revolutionize your business operations. At SolByte Tech, we specialize in developing AI solutions that help businesses innovate, automate, and make intelligent decisions. Our AI services include:</p>
       <br/>
       <ol>
         <li><b>Intelligent Automation:</b><br/> Harness the power of AI to streamline workflows, reduce manual effort, and improve operational efficiency through intelligent process automation.</li>
@@ -288,7 +288,7 @@ export const allServices = [
     icon: allServiceIcon6,
     detailHeading:
       "Game Development: Bringing Your Ideas to Life with Interactive Experiences",
-    detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At AI Company, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
+    detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At SolByte Tech, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
       <br/>
       <ol>
         <li><b>Concept and Story Development:</b><br/>We work with you to develop compelling narratives, unique characters, and engaging gameplay mechanics that keep players coming back.</li>
@@ -309,7 +309,7 @@ export const allServices = [
     icon: allServiceIcon7,
     detailHeading:
       "Digital marketing: Bringing Your Ideas to Life with Interactive Experiences",
-    detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At AI Company, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
+    detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At SolByte Tech, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
       <br/>
       <ol>
         <li><b>Concept and Story Development:</b><br/>We work with you to develop compelling narratives, unique characters, and engaging gameplay mechanics that keep players coming back.</li>

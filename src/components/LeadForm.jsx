@@ -72,7 +72,7 @@ const LeadForm = () => {
         Let's connect!
       </h2>
       <p data-aos="fade-up" className="desc text-center max-w-[55rem] mx-auto">
-        At AI Company, we believe in the power of collaboration and shared
+        At SolByte Tech, we believe in the power of collaboration and shared
         passion. We're not just a team of developers, we're your partners in
         igniting your brand's unique potential. So, whether you're brimming with
         ideas or just starting to spark, reach out and let's chat!
@@ -130,8 +130,7 @@ const LeadForm = () => {
                 required: "Phone number is required",
                 pattern: {
                   value: /^\+?[0-9]{10,15}$/,
-                  message:
-                    "Entered phone number is invalid",
+                  message: "Entered phone number is invalid",
                 },
               })}
             />
