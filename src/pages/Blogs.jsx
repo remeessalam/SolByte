@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
+import { blogsdetails } from "../blogs.js";
 // import { blogs } from "../../data/blogs";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 
@@ -29,7 +30,7 @@ export const blogs = [
   },
 ];
 const Blogs = () => {
-  return ( 
+  return (
     <>
       <WebsiteHeader />
       <PageBanner title="Blogs" />
@@ -43,7 +44,7 @@ const Blogs = () => {
             Insights and Innovations: Your Gateway to IT Excellence
           </h4>
           <div className="mt-[2rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
-            {blogs.map((blog) => (
+            {blogsdetails.map((blog) => (
               <BlogItem key={blog.id} blog={blog} />
             ))}
           </div>
@@ -82,15 +83,12 @@ export const BlogItem = ({ blog }) => {
           to={`/blogs/${blog.id}`}
           className="text-xl hyphen-auto font-medium leading-tight line-clamp-2 text-ellipsis hover:text-primary transition-all duration-200"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure
-          neque nihil
-          {/* {blog.title} */}
+          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure
+          neque nihil */}
+          {blog.heading}
         </Link>
         <p className="desc leading-tight text-gray-800 line-clamp-3 text-ellipsis hyphen-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-          porro excepturi et eos corrupti magnam vel voluptatibus aperiam atque
-          voluptatum dolor ullam alias similique hic aliquam provident minima
-          cumque doloremque!
+          {blog.desc}
         </p>
         {/* <div
           dangerouslySetInnerHTML={{ __html: blog.content }}
