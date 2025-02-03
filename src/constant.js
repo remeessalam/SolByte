@@ -31,7 +31,7 @@ export { logoImg };
 
 export const companyDetails = {
   phone: "+916364890216",
-  address: "ABC Street, City, Country",
+  address: "MYSURU, KARNATAKA, INDIA",
   email: "support@solbytetech.com",
   linkedin: "",
   instagram: "https://www.instagram.com/solbytetech?igsh=NTcyZXMyNWl2MGNu",

@@ -2,9 +2,9 @@ import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import React, { useState } from "react";
 import { Link as Scroll } from "react-scroll";
-import { Link } from "react-router-dom";
-import { logoImg } from "../../constant";
-import { X } from "lucide-react";
+import { Link, NavLink } from "react-router-dom";
+import { companyDetails, logoImg } from "../../constant";
+import { Instagram, Linkedin, Twitter, X } from "lucide-react";
 import { Helmet } from "react-helmet";
 
 const options = [
@@ -91,20 +91,34 @@ const LandingHeader = () => {
           open={isOpen}
           onClose={toggleDrawer}
           direction="right"
-          className="py-4 px-10 z-10"
+          className="py-4  z-10"
         >
-          <div className="mb-6 flex items-center justify-end pr-[.7rem] py-[.4rem]">
+          <div className="mb-6 px-10  flex items-center justify-between pr-[.7rem] py-[.4rem]">
+            <NavLink
+              aria-label="Home"
+              smooth={true}
+              to="/"
+              className="cursor-pointer"
+            >
+              <img
+                src={logoImg}
+                width="75"
+                height="75"
+                className="w-[8rem] md:w-[11rem] scale-125 object-contain"
+                alt="logo"
+              />
+            </NavLink>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-primary_text text-[2.2rem]"
+              className="text-white p-1 bg-black rounded-full text-[2.2rem]"
             >
-              <X size={35} />
+              <X size={25} />
             </button>
           </div>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col">
             <Link
               to="/"
-              className="text-3xl text-primary_text font-medium transition-colors duration-300 link"
+              className="text-3xl text-primary_text px-10 border-b border-gray-300 py-3 font-medium transition-colors duration-300 link"
             >
               Home
             </Link>
@@ -115,13 +129,38 @@ const LandingHeader = () => {
                 to={path}
                 spy={true}
                 smooth={true}
-                className="text-3xl text-primary_text font-medium transition-colors duration-300 link"
+                className="text-3xl px-10 border-b border-gray-300 py-3 text-primary_text font-medium transition-colors duration-300 link"
                 offset={-70}
                 duration={1000}
               >
                 {name}
               </Scroll>
             ))}
+          </div>
+          <div className="overflow-hidden">
+            <ul className="flex justify-center  gap-3 mt-1 py-4">
+              <Link
+                aria-label="Contact us on Instagram"
+                to={companyDetails.instagram}
+                className="w-[2rem] h-[2rem] rounded-full p-2 bg-black hover:bg-primary text-white hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
+              >
+                <Instagram strokeWidth={1.5} size={20} />
+              </Link>
+              <Link
+                aria-label="Contact us on Twitter"
+                to={companyDetails.twitter}
+                className="w-[2rem] h-[2rem] rounded-full p-2 bg-black hover:bg-primary text-white hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
+              >
+                <Twitter strokeWidth={1.5} size={20} />
+              </Link>
+              <Link
+                aria-label="Contact us on LinkedIn"
+                to={companyDetails.linkedin}
+                className="w-[2rem] h-[2rem] rounded-full p-2 bg-black hover:bg-primary text-white hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
+              >
+                <Linkedin strokeWidth={1.5} size={20} />
+              </Link>
+            </ul>
           </div>
         </Drawer>
         <button
