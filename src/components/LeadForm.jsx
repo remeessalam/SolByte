@@ -60,6 +60,7 @@ const LeadForm = () => {
     // Construct the request payload
     var payload = {
       to: companyDetails.email,
+      // to: "remeesreme4u@gmail.com",
       subject: values.subject,
       body: emailBody,
     };
